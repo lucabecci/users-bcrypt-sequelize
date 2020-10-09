@@ -1,12 +1,12 @@
-const app = require('./app')
-require('dotenv').config()
+const app = require("./app");
+require("dotenv").config();
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 4000;
 
 async function main() {
-    await app.listen(PORT)
-    console.log('Server on port:',PORT)
+  await app.listen(PORT);
+  console.log("Server on port:", PORT);
 }
 
-main()
+main();
