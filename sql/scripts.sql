@@ -33,6 +33,9 @@ INSERT INTO users(id, name, lastname, email, password, age)
 INSERT INTO users(id, name, lastname, email, password, age)
     VALUES (321455, 'Marcos', 'Gutierrez', 'marcos@fakeemail.com', '12331', 19 );
 
+INSERT INTO users(id, name, lastname, email, password, age)
+    VALUES (233313, 'Luka', 'Jhonson', 'faks@gmail.com', 'salsa123', 23 );
+
 -- INSERT TEST DATA FOR tasks
 INSERT INTO tasks(id, name, description, priority, userid)
     VALUES(1, 'download Vuejs', 'this is a desc', 2, 321312);

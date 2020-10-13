@@ -1,8 +1,7 @@
-const { Router } = require('express');
+const { Router } = require("express");
 const router = Router();
-const { getTasks } = require('../controllers/task.controller')
+const { getTasks, getTaskByID } = require("../controllers/task.controller");
 
-router.get('/', getTasks)
-
-
-module.exports = router
+router.get("/", getTasks);
+router.get('/:id', getTaskByID)
+module.exports = router;

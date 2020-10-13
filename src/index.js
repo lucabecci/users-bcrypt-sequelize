@@ -2,7 +2,7 @@ const app = require("./app");
 require("dotenv").config();
 
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 4000;
+const PORT = 5000;
 
 async function main() {
   await app.listen(PORT);

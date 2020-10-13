@@ -1,25 +1,29 @@
-const Sequelize = require('sequelize');
-const sequelize = require('../database/database');
+const Sequelize = require("sequelize");
+const sequelize = require("../database/database");
 
-const Task = sequelize.define('task', {
+const Task = sequelize.define(
+  "task",
+  {
     id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true
+      type: Sequelize.INTEGER,
+      primaryKey: true,
     },
     name: {
-        type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     description: {
-        type: Sequelize.STRING
+      type: Sequelize.STRING,
     },
     priority: {
-        type: Sequelize.INTEGER
+      type: Sequelize.INTEGER,
     },
     userid: {
-        type: Sequelize.INTEGER
-    }
-}, {
-    timestamps: false
-});
+      type: Sequelize.INTEGER,
+    },
+  },
+  {
+    timestamps: false,
+  }
+);
 
 module.exports = Task;
